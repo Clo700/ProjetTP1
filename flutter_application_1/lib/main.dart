@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter démo page accueil'),
     );
   }
 }
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
-        backgroundColor: const Color.fromRGBO(32, 135, 135, 1.0),
+        backgroundColor: const Color.fromRGBO(255, 199, 250, 1.0),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -97,11 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'Coeurs:',
+              style: TextStyle(fontSize: 30),
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline3,
             ),
           ],
         ),
@@ -109,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.favorite),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
