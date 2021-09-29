@@ -23,8 +23,9 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.pink,
+        scaffoldBackgroundColor: const Color.fromRGBO(255, 204, 229, 1.0),
       ),
-      home: const MyHomePage(title: 'Flutter démo page accueil'),
+      home: const MyHomePage(title: 'Lets go shopping !'),
     );
   }
 }
@@ -74,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
-        backgroundColor: const Color.fromRGBO(255, 199, 250, 1.0),
+        backgroundColor: const Color.fromRGBO(255, 102, 178, 1.0),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
