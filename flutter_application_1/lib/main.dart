@@ -11,9 +11,15 @@ class MyApp extends StatelessWidget {
       title: 'Your app name',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Your Title here'),
-        ),
-        body: const Center(
+            shape:
+                BeveledRectangleBorder(borderRadius: BorderRadius.circular(5)),
+            title: const Text('Accueil'),
+            backgroundColor: Colors.pink,
+            centerTitle: true,
+            leading: Icon(Icons.home)),
+        body:
+            //Column
+            const Center(
           child: Text('Hello World, of course'),
         ),
       ),
