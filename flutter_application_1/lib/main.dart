@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromRGBO(255, 204, 229, 1.0),
       ),
       home: const MyHomePage(title: 'Lets go shopping !'),
+      
     );
   }
 }
@@ -46,6 +47,7 @@ class MyHomePage extends StatefulWidget {
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
+  
 }
 
 class _MyHomePageState extends State<MyHomePage> {
