@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromRGBO(255, 204, 229, 1.0),
       ),
       home: const MyHomePage(title: 'Lets go shopping !'),
-      
     );
   }
 }
@@ -47,7 +46,6 @@ class MyHomePage extends StatefulWidget {
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
-  
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -116,5 +114,37 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.favorite),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+}
+
+class ButtonRounded extends StatefulWidget {
+  const ButtonRounded({Key? key}) : super(key: key);
+
+  @override
+  _ButtonRoundedState createState() => _ButtonRoundedState();
+}
+
+class _ButtonRoundedState extends State<ButtonRounded> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text("Button", style: TextStyle(fontSize: 22))),
+        body: Container(
+          padding: const EdgeInsets.all(10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                  onPressed: () {},
+                  child: Text("Hehehehehe".toUpperCase(),
+                      style: TextStyle(fontSize: 14)),
+                  style: ButtonStyle(
+                    padding: MaterialStateProperty.all<EdgeInsets>(
+                        EdgeInsets.all(15)),
+                    //foregroundColor: MaterialStateProperty.all<Color>(Color.red),
+                  )),
+            ],
+          ),
+        ));
   }
 }
