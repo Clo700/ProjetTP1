@@ -31,19 +31,19 @@ class MyApp extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(5),
                     padding: const EdgeInsets.all(5),
-                    child: const Text("Recommandé",
+                    child: const Text("Onglet 1",
                         style: TextStyle(color: Colors.pink)),
                   ),
                   Container(
                     margin: const EdgeInsets.all(5),
                     padding: const EdgeInsets.all(5),
-                    child: const Text("Formal",
+                    child: const Text("Onglet 2",
                         style: TextStyle(color: Colors.pink)),
                   ),
                   Container(
                     margin: const EdgeInsets.all(5),
                     padding: const EdgeInsets.all(5),
-                    child: const Text("Heeeeeeeeee",
+                    child: const Text("Onglet 3",
                         style: TextStyle(color: Colors.pink)),
                   )
                 ],
@@ -53,7 +53,24 @@ class MyApp extends StatelessWidget {
               ),
               const SizedBox(
                 height: 5,
-              )
+              ),
+              Row(children: <Widget>[
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  child: const Icon(Icons.home),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  child: const Icon(Icons.home),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  child: const Icon(Icons.home),
+                )
+              ])
             ],
           )),
     );
