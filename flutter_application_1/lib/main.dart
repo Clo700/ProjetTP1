@@ -58,6 +58,40 @@ class MyApp extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.all(5),
                   padding: const EdgeInsets.all(5),
+                  child: const Text("Onglet 3",
+                      style: TextStyle(color: Colors.black45)),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  child: const Text("Onglet 3",
+                      style: TextStyle(color: Colors.black45)),
+                ),
+              ]),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(children: <Widget>[
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  child: const Text("Onglet 3",
+                      style: TextStyle(color: Colors.black45)),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
+                  child: const Text("Onglet 3",
+                      style: TextStyle(color: Colors.black45)),
+                ),
+              ]),
+              const SizedBox(
+                height: 5,
+              ),
+              Row(children: <Widget>[
+                Container(
+                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   child: const Icon(Icons.home),
                 ),
                 Container(
