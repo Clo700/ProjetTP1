@@ -28,6 +28,8 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
+    assets : 
+      - assets/imageprincipale.jpg
     sdk: flutter
 
 

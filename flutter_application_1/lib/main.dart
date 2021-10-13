@@ -10,19 +10,52 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Your app name',
       home: Scaffold(
-        appBar: AppBar(
+          appBar: AppBar(
             shape:
                 BeveledRectangleBorder(borderRadius: BorderRadius.circular(5)),
             title: const Text('Accueil'),
             backgroundColor: Colors.pink,
             centerTitle: true,
-            leading: Icon(Icons.home)),
-        body:
-            //Column
-            const Center(
-          child: Text('Hello World, of course'),
-        ),
-      ),
+            leading: const Icon(Icons.home),
+            actions: const <Widget>[
+              Padding(
+                padding: EdgeInsets.all(5),
+                child: Icon(Icons.home),
+              )
+            ],
+          ),
+          body: Column(
+            children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: const EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
+                    child: const Text("Recommandé",
+                        style: TextStyle(color: Colors.pink)),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
+                    child: const Text("Formal",
+                        style: TextStyle(color: Colors.pink)),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
+                    child: const Text("Heeeeeeeeee",
+                        style: TextStyle(color: Colors.pink)),
+                  )
+                ],
+              ),
+              const Image(
+                image: AssetImage("imageprincipale"),
+              ),
+              const SizedBox(
+                height: 5,
+              )
+            ],
+          )),
     );
   }
 }
